@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  nginx:
+    build: images/nginx
+    volumes:
+    - nginx_conf:/etc/nginx/
+    - ./php:/www
+    ports:
+      - "81:81"
+      - "82:82"
+
+
+  php:
+    build: images/php
+    volumes:
+      - ./php:/www
+
+  nodejs:
+    build: images/nodejs
+    volumes:
+      - ./nodejs:/www
+
+volumes:
+  nginx_conf:
