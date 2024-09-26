@@ -8,9 +8,8 @@ services:
     - nginx_conf:/etc/nginx/
     - ./php:/www
     ports:
-      - "81:81"
       - "82:82"
-
+      - "81:81"
 
   php:
     build: images/php
