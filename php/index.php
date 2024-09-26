@@ -1,5 +1,5 @@
 <?php
-echo "Bonjour PHP !";
+echo "Bonjour PHP ! <br />";
 
 class Forme {
     protected $nom;
@@ -28,8 +28,8 @@ class Cercle extends Forme {
 
 // Création d'un cercle
 $cercle = new Cercle("Cercle", 5);
-echo "Le nom de la forme est : " . $cercle->getNom() . "\n";
-echo "L'aire du cercle est : " . $cercle->calculerAire() . "\n";
+echo "Le nom de la forme est : " . $cercle->getNom() . "<br />";
+echo "L'aire du cercle est : " . $cercle->calculerAire() . "<br />";
 
 
 class Animal {
@@ -40,7 +40,7 @@ class Animal {
 
 class Chien extends Animal {
     public function faireDuBruit() {
-        echo "Ouaf !\n";
+        echo "Ouaf !<br />";
     }
 }
 
