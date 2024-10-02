@@ -15,3 +15,19 @@ bash-5.1# ls
 default.conf
 bash-5.1# nano default.conf // voir le code dans le fichier
 bash-5.1# /usr/sbin/nginx -s reload
+
+
+
+cd nodejs
+node -v
+npm -v
+npm install -g nativescript
+ns doctor android
+
+npm config set strict-ssl false
+git clone https://github.com/NativeScript/tutorials.git
+cd tutorials/vue-tutorial
+npm install
+ns run ios
+
+ns run android
